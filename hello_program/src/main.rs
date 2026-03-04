@@ -33,15 +33,66 @@ fn main() {
 
 //to avoid ownership issues we can use clone method to create a copy of the string and pass it to the function
 // another way is to use tupple to return multiple values from a function and pass the ownership back to the caller
-let s1:String=String::from("hello");
-let len=getlen(s1.clone());
-println!("the length of the {} string is  {}",s1,len);
+// let s1:String=String::from("hello");
+// let len=getlen(s1.clone());
+// println!("the length of the {} string is  {}",s1,len);
 
+//borrow operation 
+// let s1:String=String::from("hello");
+// let len:usize=getlen(&s1);
+// println!("the length of string is {} {}" ,len,s1)
+
+// let mut s1:String=String::from("hello");
+// append_world (&mut s1);
+// println!("the string is {}", s1);
+// }
+
+// fn append_world(s3:&mut String){
+// s3.push_str("world");
+
+
+// let mut s1:String=String::from("hello");
+// let r1=&mut s1;
+// println!("the value of r1 is {}", r1);
+// let r2=&mut s1;
+// println!("the value of r2 is {}", r2);
+// println!("the value of s1 is {}{}",r1,r2);
+
+// refrencing and derefrencing 
+// let mut x1=5;
+// let y1=&mut x1;
+// *y1+=1;
+// println!("the value of x1 is {}", y1);
+
+// Dangling reference 
+// let ref=get();
+
+
+//Data type 
+// 1) scalar
+// float type f32,f64
+// boolean type 
+// let x:bool=true;
+// println!("the value of x is {}", x);
+// charater type
+// let char='a';
+// println!("the value of char is {}", char);
 }
-fn getlen(str:String)->usize{
-   let leng:usize=str.len();
-   return leng;
-}
+// fn get()->&String{
+// let s:String=String::from("hello ayushman");
+// return &s;
+// }
+
+
+// fn getlen(s1:&String)->usize{
+//     return s1.len();
+// }
+
+ 
+// fn getlen(str:String)->usize{
+//    let leng:usize=str.len();
+//    return leng;
+// }
 // fn get()->String{
 //     let new:String=String::from("hello ayushman");
 //     return new;
