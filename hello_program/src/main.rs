@@ -84,14 +84,18 @@ fn main() {
 // println!("the value of arr is {}", arr.len());
 // write(arr);
 // vector
-let mut v:Vec<i32>=Vec::new();
-v.push(1);
-v.push(2);
-v.push(3);
-println!("the value of vector is {}", v.len());
+// let mut v:Vec<i32>=Vec::new();
+// v.push(1);
+// v.push(2);
+// v.push(3);
+// println!("the value of vector is {}", v.len());
+// let v=vec![1,2,3,4,5];
+// println!("the value of vector is {:?}", v);
 //typeofdatatype
 // let x=5;
 // let y=5.0;
+// println!("the type of x is {}", (&x));
+// shadowing 
 // conditional statement
 // for loop
 // let arr=[1,2,3];
