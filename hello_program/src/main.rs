@@ -1,3 +1,4 @@
+// use std::io;
 fn main() {
     // println!("Hello, world!");
     // let mut num:u16=256;
@@ -77,8 +78,55 @@ fn main() {
 // charater type
 // let char='a';
 // println!("the value of char is {}", char);
+
+//array 
+// let  arr:[i32;5]=[1,2,3,4,5];
+// println!("the value of arr is {}", arr.len());
+// write(arr);
+// vector
+let mut v:Vec<i32>=Vec::new();
+v.push(1);
+v.push(2);
+v.push(3);
+println!("the value of vector is {}", v.len());
+//typeofdatatype
+// let x=5;
+// let y=5.0;
+// conditional statement
+// for loop
+// let arr=[1,2,3];
+// loop{
+//     println!("hello")
+// }
+
+// for element in &arr{
+//     println!("the value of element is {}", element);
+// }
+// while loop
+
+//match 
+// let num=5;
+
+// match num {
+//     1=>println!("the value of num is 1"),
+//     2=>println!("the value of num is 2"),
+//     3=>println!("the value of num is 3"),
+//     _=>println!("the value of num is not 1,2,3")
+// }
+
+// // I/O operation
+// let mut input=String::new();
+// println!("enter your name");
+// io::stdin().read_line(&mut input).expect("failed to read line");
+// println!("hello {}", input);
+
 }
-// fn get()->&String{
+
+// fn write(mut arr1:[i32;5]){
+//     arr1[0]=10;
+//     println!("the value of arr is {}", arr1[0]);
+// }
+// fn get()->&String{   
 // let s:String=String::from("hello ayushman");
 // return &s;
 // }
